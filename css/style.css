@@ -251,6 +251,10 @@ a {
   font-weight: 400;
   line-height: 25.5px; /* 150% */
 }
+.about_dive-dive {
+display: flex;
+justify-content: space-around;
+}
 .about_dive-one {
   display: inline-flex;
   padding: 0px 33px 26.813px 0px;
@@ -259,21 +263,15 @@ a {
   gap: 5px;
 }
 .about_dive {
-  position: relative;
-  top: 135px;
   display: inline-block;
   width: 820px;
   height: 320.906px;
 }
 .about {
+  padding: 135px 0 136px 0;
   background: #ebebeb;
   height: 872px;
   flex-shrink: 0;
-}
-.about_dive-two {
-  position: relative;
-  left: 900px;
-  bottom: 250px;
 }
 .about_title-two {
   bottom: 79px;
@@ -313,7 +311,6 @@ a {
   justify-content: space-between;
 }
 .number_dive {
-  position: relative;
   top: 59px;
   margin: 0 auto;
 }
