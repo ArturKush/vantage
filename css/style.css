@@ -252,8 +252,8 @@ a {
   line-height: 25.5px; /* 150% */
 }
 .about_dive-dive {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .about_dive-one {
   display: inline-flex;
@@ -261,10 +261,11 @@ justify-content: space-around;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
+  width: 820px;
 }
 .about_dive {
   display: inline-block;
-  width: 820px;
+
   height: 320.906px;
 }
 .about {
@@ -275,6 +276,9 @@ justify-content: space-around;
 }
 .about_title-two {
   bottom: 79px;
+}
+#about_item {
+  margin-top: 50px;
 }
 .number_text {
   color: #141414;
@@ -477,9 +481,7 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   margin-top: 122px;
-}
-.project_dive {
-  margin-top: 132px;
+  margin-bottom: 132px;
 }
 .project_item {
   list-style: square;
@@ -491,24 +493,19 @@ justify-content: space-around;
   list-style: none;
 }
 .project_list {
-  position: relative;
-  top: 70px;
   display: flex;
   justify-content: space-around;
 }
 .project {
-  height: 174.25px;
+  padding: 67px 0px 240px;
   flex-shrink: 0;
   background: rgb(190, 190, 190);
 }
 .footer {
-  display: flex;
-  width: 1440px;
-  height: 441px;
-  padding: 0px 68px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  background: #141414;
+  height: 239px;
+  padding-bottom: 16px;
+  position: relative;
 }
 .footer_card {
   position: absolute;
@@ -540,53 +537,103 @@ justify-content: space-around;
   gap: 37px;
   flex-shrink: 0;
 }
-.footer_card-dive {
+.footer_rectangle {
+  flex-shrink: 0;
+  padding: 68px;
+  background: #141414c8;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 68px 68px 68px 68px;
-}
-.footer_rectangle {
+  align-items: flex-end;
   position: absolute;
-  z-index: 2;
-  top: 169px;
-  left: 136px;
-  background: #99823d;
+  top: -150px;
+}
+.footer_link {
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 309.091% */
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
+}
+.footer_menu {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+}
+.footer_form {
   width: 1168px;
   height: 204px;
-  flex-shrink: 0;
+  background: #99823d;
+  padding: 68px;
+  display: flex;
+  gap: 17px;
+  position: absolute;
+  top: 120px;
 }
-.footer_rectangle-dive {
-  width: 1032px;
-height: 68px;
-flex-shrink: 0;
-padding: 65px 65px 65px 65px;
-}
-.footer_rectangle-input {
+.footer_form input {
   width: 860px;
-height: 68px;
-flex-shrink: 0;
-  color: #3D3D3D;
+  height: 68px;
+  background: #fff;
+  outline: none;
+  border: none;
+  flex-shrink: 0;
+  color: #3d3d3d;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 309.091% */
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.footer_form-btn {
+  width: 155px;
+  height: 68px;
+  flex-shrink: 0;
+  background: #141414;
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 309.091% */
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
+  border: 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+.footer_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 68px 0 68px;
+}
+.footer_list {
+  display: flex;
+  gap: 36px;
+}
+.footer_site {
+  color: rgba(255, 255, 255, 0.75);
 text-align: center;
 font-family: Open Sans;
 font-size: 11px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: 34px; /* 309.091% */
 letter-spacing: 2.763px;
 text-transform: uppercase;
 }
-.footer_rectangle-button {
-  width: 155px;
-height: 68px;
-flex-shrink: 0;
-background: #141414;
-  color: #FFF;
-text-align: center;
-font-family: Open Sans;
-font-size: 11px;
-font-style: normal;
-font-weight: 700;
-line-height: 34px; /* 309.091% */
-letter-spacing: 2.763px;
-text-transform: uppercase;
+.footer_site:nth-child(2) {
+  color: #fff;
 }
